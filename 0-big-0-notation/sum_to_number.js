@@ -6,6 +6,7 @@
 
 // Fisrt implementation by @YobertyAlej
 const sum = function(n) {
+  // O(n)
   let accumulator = 0;
 
   for (let i = 1; i <= n; i++) {
@@ -15,6 +16,7 @@ const sum = function(n) {
 };
 
 const sumByInstructor = function(n) {
+  // O(1)
   return (n * (n + 1)) / 2;
 };
 
