@@ -4,8 +4,6 @@ Designed to solve Dynamic Programming problems, excel searching algorithms, sort
 
 ## Big 0 Notation - Branch 0-big-o-notation
 
-### What it is Big 0 Notation?
-
 Its a way to formalize fuzzy counting, it allows us to talk in a formal way about how the runtime of an algorithm grows as the inputs grow
 
 We don't care about the details, only about the trend
@@ -47,3 +45,24 @@ It could be:
 - Quadratic · f(n) = n^2 (The number of operations will grow in an exponential way)
 - Constant · f(n) = 1 (It doesn't matter the value of n, the number of operations will remain the same)
 - Something else...
+
+### Simplifying Big 0 Notations (Rules of thumb)
+
+- Constant don't matter
+
+If we found ourselves with O(2n), you can safely say then O(n)
+If we found ourselves with O(500), you can safely say then O(1)
+If we found ourselves with O(12n^2), you can safely say then O(n^2)
+
+- Smaller terms don't matter
+
+If we found ourselves with O(n + 10), you can safely say then O(n)
+If we found ourselves with O(1000n + 50), you can safely say then O(n)
+If we found ourselves with O(n^2 + 5n + 8), you can safely say then O(n^2)
+
+### Big 0 Shorthands
+
+- Arithmetic operations are constant O(1) · + - \* / etc
+- Variable assignment is constant O(1) · let a = 3
+- Accessing elements in an array (by index) or object (by key) is constant · a[30], b['foo']
+- In a loop, the complexity is the lenght of the loop times the complexity of whatever happens inside of it
