@@ -129,3 +129,15 @@ Insertion and removal depends on WHERE it has being added or removed the element
 Adding and removing elements to te beginning of an array is an expensive operations, mainly because it has to re-index all the next elements of it, and it grows as N grows: AKA O(n)
 
 push() and pop() performs faster than shift() and unshift()
+
+Some Array methods performance
+
+- push O(1)
+- pop O(1)
+- shift O(n)
+- unshift O(n)
+- concat O(n)
+- slice O(n)
+- splice O(n)
+- sort O(n \* log(n))
+- forEach/map/filter/reduce/etc O(n)
