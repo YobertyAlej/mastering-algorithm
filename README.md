@@ -78,3 +78,19 @@ This is also known as auxiliary space complexity
 - Most primitives (booleans, numbers, undefined, null) are constant space
 - Strings require O(n) space, where n is the length of the string
 - Reference types are generally O(n), where n is the length of the array or the number of keys in an object
+
+### Logarithms
+
+Even thought we've encountered some of the most common complexities: O(1), O(n), O(n^2), sometimes Big 0 expressions will involve more complex mathematical expressions.
+
+One than appears more often than you might like is the logarithm.
+
+#### Log
+
+A log is the inverse of exponentiation
+
+#### Rule of thumb for Logs
+
+The logarithm of a number roughly measures the number of times you can divide that number by 2 before you get a value that's less than equal or equal to one
+
+Logarithm time complexity is great!
