@@ -94,3 +94,23 @@ A log is the inverse of exponentiation
 The logarithm of a number roughly measures the number of times you can divide that number by 2 before you get a value that's less than equal or equal to one
 
 Logarithm time complexity is great!
+
+## Arrays and Objects Performance
+
+Let's dive into the performance of the these JS built-in data structures through the lens of the Big 0 Notation
+
+### Objects
+
+When you don't need ordering, objects are a great choice!
+
+- Insertion O(1)
+- Removal O(1)
+- Searching O(N)
+- Access O(1)
+
+And some methods like:
+
+- Object.keys O(n)
+- Object.values O(n)
+- Object.entries O(n)
+- Object.hasOwnProperty O(1)
