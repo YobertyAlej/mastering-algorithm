@@ -8,7 +8,7 @@ Its a way to formalize fuzzy counting, it allows us to talk in a formal way abou
 
 We don't care about the details, only about the trend
 
-### Why do we need Big 0 Notation?
+### Why do we need Big 0 Notation
 
 Imagine we have multiple implementations or solutions to a given task?
 How do we know what's the best possible solution or the most performant solution to it?
@@ -27,7 +27,7 @@ We mesuare if a code runs:
 - Less memory-intensive
 - More Readable
 
-#### Faster code
+### Faster code · Time Complexity
 
 If you decide to measure your code using time as metric you will find out that it's hard to rely on it.
 
@@ -37,7 +37,7 @@ So, what do we do?
 
 We compare the _number_ of simple operations the computer has to perform
 
-### Big 0 Notations
+#### Big 0 Notations
 
 It could be:
 
@@ -46,7 +46,7 @@ It could be:
 - Constant · f(n) = 1 (It doesn't matter the value of n, the number of operations will remain the same)
 - Something else...
 
-### Simplifying Big 0 Notations (Rules of thumb)
+#### Simplifying Big 0 Notations (Rules of thumb)
 
 - Constant don't matter
 
@@ -60,9 +60,21 @@ If we found ourselves with O(n + 10), you can safely say then O(n)
 If we found ourselves with O(1000n + 50), you can safely say then O(n)
 If we found ourselves with O(n^2 + 5n + 8), you can safely say then O(n^2)
 
-### Big 0 Shorthands
+#### Big 0 Shorthands
 
 - Arithmetic operations are constant O(1) · + - \* / etc
 - Variable assignment is constant O(1) · let a = 3
 - Accessing elements in an array (by index) or object (by key) is constant · a[30], b['foo']
 - In a loop, the complexity is the lenght of the loop times the complexity of whatever happens inside of it
+
+### Less memory-intesive · Space Complexity
+
+The space required by the algorithm not including the space taken by the inputs.
+
+This is also known as auxiliary space complexity
+
+#### Rules of thumb
+
+- Most primitives (booleans, numbers, undefined, null) are constant space
+- Strings require O(n) space, where n is the length of the string
+- Reference types are generally O(n), where n is the length of the array or the number of keys in an object

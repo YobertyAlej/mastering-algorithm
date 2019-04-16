@@ -4,9 +4,12 @@
  *
  */
 
-// Fisrt implementation by @YobertyAlej
 const sum = function(n) {
-  // O(n)
+  /**
+   * Fisrt implementation by @YobertyAlej
+   * Time complexity of: O(n)
+   * Space complexity of: O(1)
+   */
   let accumulator = 0;
 
   for (let i = 1; i <= n; i++) {
@@ -16,7 +19,11 @@ const sum = function(n) {
 };
 
 const sumByInstructor = function(n) {
-  // O(1)
+  /**
+   * Implementation by instructor @ColtSteele
+   * Time complexity of: O(1)
+   * Space complexity of: O(1)
+   */
   return (n * (n + 1)) / 2;
 };
 
