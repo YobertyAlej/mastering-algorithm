@@ -114,3 +114,18 @@ And some methods like:
 - Object.values O(n)
 - Object.entries O(n)
 - Object.hasOwnProperty O(1)
+
+### Arrays
+
+Are the only ordering data structure we get for free in JS
+
+- Insertion It depends...
+- Removal It depends...
+- Searching O(N)
+- Access O(1)
+
+Insertion and removal depends on WHERE it has being added or removed the element.
+
+Adding and removing elements to te beginning of an array is an expensive operations, mainly because it has to re-index all the next elements of it, and it grows as N grows: AKA O(n)
+
+push() and pop() performs faster than shift() and unshift()
