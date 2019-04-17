@@ -141,3 +141,19 @@ Some Array methods performance
 - splice O(n)
 - sort O(n \* log(n))
 - forEach/map/filter/reduce/etc O(n)
+
+## Algorithm making and problem solving
+
+Algorithm: Set of steps to accomplish a task
+
+Strategies
+
+- Device a plan for solving problems
+- Master common problem solving patterns (Identify the kind of problem and solve it using the steps)
+
+### Problem Solving Strategies
+
+1. Understand the problem
+1. Explore concrete examples
+1. Solve/Simplify the problem
+1. Look back and refactor
