@@ -206,3 +206,25 @@ Simplify:
 - Can you improve the performance of your solution?
 - Can you think of other ways to refactor?
 - How have other people solve the same problem?
+
+#### TL;DR for problem solving
+
+- Understand the problem
+
+Ask questions and make sure you DO undestand it
+
+- Explore concrete problems
+
+They are incredibliy helpful for getting the edge cases and to find WHAT questions to ask, and start by UNIT TESTING (TDD)
+
+- Break it down!
+
+Comment out the steps, your game plan and sets your mindset before start writing code
+
+- Solve / Simplify
+
+Solve what you can, start by the simpler parts, ingore the tricky parts and then incorporate them
+
+- Look back and Refactor
+
+Solving a problem is not the end of the strategy, figure it HOW it can perform better, balance it with legibility, ask yourself if theres a different approach for solving it
