@@ -177,3 +177,11 @@ Steps:
 1. Progress to more complex examples
 1. Explore examples with Empty Inputs
 1. Explore examples with Invalid Inputs
+
+#### Break it down! (Back-coding)
+
+Explicitly write out the steps you need to take in order to solve the problem, this forces you to think about the code you'll write before you write it, and helps you catch any lingering conceptual issues or missunderstandings before you dive in and have to worry about details (e.g. language syntax) as well.
+
+TL;DR: You care about the problem solving steps, not the details.
+
+Very important: Have cleared the DETAILS about the problem before starting to break it down! Those details are gonna be cleared when you start exploring concrete examples, ask all the questions you need then.
