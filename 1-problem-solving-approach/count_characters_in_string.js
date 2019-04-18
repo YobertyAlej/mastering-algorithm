@@ -76,6 +76,33 @@ charCount = function(str) {
   return characters;
 };
 
+charCount = function(str) {
+  //Four iteration · @YobertyAlej's approach after refactoring
+  //check if the input is valid value (It's a string and it's not empty), if is not a valid input, return false
+  if (typeof str !== "string" || str.length === 0) {
+    return false;
+  }
+  //if is a valid input
+  //make the object that will be return
+  let characters = {};
+  //loop over the input characters and
+  for (let currentChar of str) {
+    // get the lowercased value of the current char
+    currentChar = currentChar.toLowerCase();
+    //  check if the char is a number/letter AND check if exist as key in the object to be return
+    if (/[a-z0-9]/.test(currentChar)) {
+      //if not exist, initialized it
+      if (!characters.hasOwnProperty(currentChar)) {
+        characters[currentChar] = 0;
+      }
+      // increment the value of the key
+      characters[currentChar]++;
+    }
+  }
+  //return the object
+  return characters;
+};
+
 let result = null;
 result = charCount("aaaa"); // {a: 4}
 result = charCount("hello"); // {h: 1, e: 1, l: 2, o: 1}

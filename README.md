@@ -196,3 +196,13 @@ Simplify:
 - Temporarily ignore that difficulty
 - Write a simplified solution
 - Then incorporate that difficulty back in
+
+#### Look back & Refactor
+
+- Can you check the result? So make sure your code works (Unit testing it's great!)
+- Can you derive a result differently? (Can you think a different approach?)
+- Can you understand it at a glance?
+- Can you use the result or method for some other problem?
+- Can you improve the performance of your solution?
+- Can you think of other ways to refactor?
+- How have other people solve the same problem?
