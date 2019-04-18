@@ -10,25 +10,31 @@
  * · Explore examples with Invalid Inputs
  */
 
-charCount("aaaa"); // {a: 4}
-charCount("hello"); // {h: 1, e: 1, l: 2, o: 1}
-charCount("my phone number is 0747965"); // ?? Should spaces be account?, how about the numbers?
-charCount("Hello Hi"); // ?? Does the uppercasing matter?
-charCount(); // ?? What should be the return output?
-charCount(""); // ?? What should be the return output?
-charCount(" "); // ?? What should be the return output?
-charCount(undefined); // ?? What should be the return output?
-charCount(null); // ?? What should be the return output?
-charCount([]); // ?? What should be the return output?
-charCount({}); // ?? What should be the return output?
+/**
+ * Concrete examples
+ * charCount("aaaa"); // {a: 4}
+ * charCount("hello"); // {h: 1, e: 1, l: 2, o: 1}
+ * charCount("my phone number is 0747965"); // ?? Should spaces be account?, how about the numbers?
+ * charCount("Hello Hi"); // ?? Does the uppercasing matter?
+ * charCount(); // ?? What should be the return output?
+ * charCount(""); // ?? What should be the return output?
+ * charCount(" "); // ?? What should be the return output?
+ * charCount(undefined); // ?? What should be the return output?
+ * charCount(null); // ?? What should be the return output?
+ * charCount([]); // ?? What should be the return output?
+ * charCount({}); // ?? What should be the return output?
+ *
+ */
 
-let charCount = function(str) {
+let charCount = function() {};
+
+charCount = function(str) {
   //first iteration
   //do something
   //return an object with keys that are alphanumeric characters in the string; values should be the count for those characters
 };
 
-let charCount = function(str) {
+charCount = function(str) {
   //second iteration · @YobertyAlej's approach (Observations: You didn't take account for details, such as the sanity of the inputs)
   //make the object that will be return
   let characters = {};
@@ -45,7 +51,7 @@ let charCount = function(str) {
   //return the object
   return characters;
 };
-let charCount = function(str) {
+charCount = function(str) {
   //Third iteration · @YobertyAlej's approach with attention to details.
   //check if the input is valid value (It's a string and it's not empty), if is not a valid input, return false
   if (typeof str !== "string" || str.length === 0) {
@@ -69,3 +75,11 @@ let charCount = function(str) {
   //return the object
   return characters;
 };
+
+let result = null;
+result = charCount("aaaa"); // {a: 4}
+result = charCount("hello"); // {h: 1, e: 1, l: 2, o: 1}
+result = charCount("my phone number is 0747965"); // ?? Should spaces be account?, how about the numbers?
+result = charCount(undefined); // ?? What should be the return output?
+
+console.log(result);

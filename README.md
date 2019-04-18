@@ -185,3 +185,14 @@ Explicitly write out the steps you need to take in order to solve the problem, t
 TL;DR: You care about the problem solving steps, not the details.
 
 Very important: Have cleared the DETAILS about the problem before starting to break it down! Those details are gonna be cleared when you start exploring concrete examples, ask all the questions you need then.
+
+#### Solve/Simplify the problem
+
+Solve the problem, and if you can't, solve a SIMPLER problem
+
+Simplify:
+
+- Find the core difficulty in what you're trying to do
+- Temporarily ignore that difficulty
+- Write a simplified solution
+- Then incorporate that difficulty back in
