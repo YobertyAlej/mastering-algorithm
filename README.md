@@ -157,3 +157,13 @@ Strategies
 1. Explore concrete examples
 1. Solve/Simplify the problem
 1. Look back and refactor
+
+#### Understand the problem
+
+Steps:
+
+1. Can i restate the problem with my own words?
+1. What are the inputs that go into the problem
+1. What are the outputs that should come from the solution of the problem?
+1. Can the outputs be determined from the inputs? In other words, do i have enough information to solve the problem?
+1. How should i label the important pieces of data that are a part of the problem?
