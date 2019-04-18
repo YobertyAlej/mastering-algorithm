@@ -167,3 +167,13 @@ Steps:
 1. What are the outputs that should come from the solution of the problem?
 1. Can the outputs be determined from the inputs? In other words, do i have enough information to solve the problem?
 1. How should i label the important pieces of data that are a part of the problem?
+
+#### Explore concrete examples
+
+- Coming up with examples can help you understand the problem better
+- Examples also provides sanity checks that your eventual solution works as it should (User stories or Unit Tests)
+
+1. Start with simple examples
+1. Progress to more complex examples
+1. Explore examples with Empty Inputs
+1. Explore examples with Invalid Inputs
