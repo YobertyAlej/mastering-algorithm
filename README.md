@@ -228,3 +228,21 @@ Solve what you can, start by the simpler parts, ingore the tricky parts and then
 - Look back and Refactor
 
 Solving a problem is not the end of the strategy, figure it HOW it can perform better, balance it with legibility, ask yourself if theres a different approach for solving it
+
+### Problem Solving Patterns
+
+Common patterns or sort of "Architectures/Mechanisms" for solving common problems found
+
+#### Frequency Counters
+
+This patters uses objects or sets to collect values/frequencies of values
+
+This can often avoid the need for nested loops or O(n^2) operations with arrays / strings
+
+We use an object to collect values and their frequencies, useful for algorithms when you need to compare multiple values and if they consist of similar values, if they are anagrams for another, if a value is contained inside the other value.
+
+To compare and count frequencies
+
+#### Why its a good apporach
+
+Because usually is O(N) against easier approaches, which generally involves nested loops O(N^2)
