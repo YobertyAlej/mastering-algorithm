@@ -247,8 +247,16 @@ To compare and count frequencies
 
 Because usually is O(N) against easier approaches, which generally involves nested loops O(N^2)
 
-#### Multiple pointers pattern
+#### Multiple pointers Pattern
 
 Creating pointers or values that correspond to an index or position and then moves towards the beginning, end or middle based on a certain condition.
 
 Very efficient for solving problems with minimal space complexity as well
+
+#### Sliding Window Pattern
+
+Involves creating a WINDOW which can either be an array or a number from one position to another
+
+Depending on a certain condition, the window either increases or closes (and a new window is created)
+
+Very useful for keeping track of a subset of data in an array/string etc
