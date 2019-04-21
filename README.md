@@ -260,3 +260,9 @@ Involves creating a WINDOW which can either be an array or a number from one pos
 Depending on a certain condition, the window either increases or closes (and a new window is created)
 
 Very useful for keeping track of a subset of data in an array/string etc
+
+#### Divide and Conquer
+
+This pattern involves dividing a data set into smaller chunks and then repeating a process with a subset of data
+
+This pattern can tremendously decrease time complexity
