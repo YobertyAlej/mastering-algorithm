@@ -285,3 +285,9 @@ In recursive functions, we keep pushing new functions (the same) onto the call s
 
 1. Base Case
 1. Different Input
+
+### When thing go wrong
+
+1. No base
+1. Forgetting to return a value
+1. Stack overflow!

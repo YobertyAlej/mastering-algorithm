@@ -4,18 +4,13 @@ const expect = require("expect");
 const chalk = require("chalk");
 
 /**
- * Write a factorial function iteratively
+ * Write a factorial function iteratively and recursively
  * factorial(3) // 6
  * factorial(4) // 36
  * factorial(5) // 120
  * factorial(1) // 1
  * factorial(0) // 1
  * factorial(-2) // undefined
- */
-
-/**
- * Write a factorial function recursively
- *
  */
 
 let factorial = function() {};
