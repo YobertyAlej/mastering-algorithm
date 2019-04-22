@@ -266,3 +266,22 @@ Very useful for keeping track of a subset of data in an array/string etc
 This pattern involves dividing a data set into smaller chunks and then repeating a process with a subset of data
 
 This pattern can tremendously decrease time complexity
+
+## Recursion
+
+A process that calls itself
+
+### Call Stack
+
+In almost all programming languages, there is a built in data structure that manages what happens when functions are invoked
+
+In JS, its called _The Call Stack_; It's a stack data structure, any time a function is invoked is placed (pushed) on top of the stack.
+
+When JS sees the _return_ keyword or when the functions ends, the compiler will remove it (pop).
+
+In recursive functions, we keep pushing new functions (the same) onto the call stack!
+
+### Parts of a recursive functions
+
+1. Base Case
+1. Different Input

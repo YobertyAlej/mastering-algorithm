@@ -1,0 +1,16 @@
+{
+  "name": "0-mastering-algorithm",
+  "version": "1.0.0",
+  "description": "Designed to solve Dynamic Programming problems, excel searching algorithms, sorting algorithms, data structures from scratch, including linked lists, trees, heaps, hash tables, and graphs.",
+  "main": "index.js",
+  "scripts": {
+    "factorial": "node 3-recursion/factorial.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^2.4.2",
+    "expect": "^24.7.1"
+  }
+}
