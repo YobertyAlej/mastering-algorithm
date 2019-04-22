@@ -286,8 +286,18 @@ In recursive functions, we keep pushing new functions (the same) onto the call s
 1. Base Case
 1. Different Input
 
-### When thing go wrong
+### When things go wrong
 
 1. No base
 1. Forgetting to return a value
 1. Stack overflow!
+
+### Helper Method Recursion
+
+It's a pattern where the function its defined as an outer function that holds the result of a recursive inner function.
+
+### Pure Recursion
+
+- For arrays use slice, the spread operator, concat
+- Strings are immutable so you need to use method like slice, substr or substring
+- To make copies of objects use Object.assign or the spread operator
