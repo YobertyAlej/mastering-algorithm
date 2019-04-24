@@ -301,3 +301,21 @@ It's a pattern where the function its defined as an outer function that holds th
 - For arrays use slice, the spread operator, concat
 - Strings are immutable so you need to use method like slice, substr or substring
 - To make copies of objects use Object.assign or the spread operator
+
+## Searching Algorithms
+
+### Linear Search
+
+It goes in one direction until it reaches a result or its end.
+
+O(n)
+O(1)
+
+### Binary Search
+
+It MUST be used on a sorted data structure.
+
+Creates a pivot, around the half of the structure, compares if the searching parameter is below or above the pivot and repeats the process with the slice of the data containing the value, repeats the process recursively until it reaches the value to be found (or not found)
+
+O(log(n)) - Time
+O(1) - Space
