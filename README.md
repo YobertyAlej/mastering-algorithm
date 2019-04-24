@@ -343,3 +343,11 @@ Understand simple sorting algorithms
 - Bubble Sort
 - Selection Sort
 - Insertion Sort
+
+#### Javascript built-in Sort
+
+- Accepts an optional comparator function with which we will tell JS how we want it to sort
+- The comparators looks at pairs of elements (a and b), determines their sort order based on the return value
+  - If it returns a negative number, a should come _before_ b
+  - If it returns a positive number, a should come _after_ b
+  - If it returns 0, they are the same so they get paired together
