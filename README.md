@@ -365,3 +365,7 @@ Many sorting algorithms involve some type of swapping functionality (e.g swappin
 #### Selection Sort Algorithm
 
 Similar to the bubble sort, but it places the smallest at the beginning
+
+##### Advantages
+
+- Selection Sort Algorithm performs less swappings than Bubble Sort
