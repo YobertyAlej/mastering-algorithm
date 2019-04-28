@@ -361,3 +361,7 @@ It's not that efficient, it has a good use case where it excels.
 ##### Before we sort, we must swap
 
 Many sorting algorithms involve some type of swapping functionality (e.g swapping to numbers to put them in order)
+
+#### Selection Sort Algorithm
+
+Similar to the bubble sort, but it places the smallest at the beginning
