@@ -2,6 +2,7 @@
 
 const expect = require("expect");
 const chalk = require("chalk");
+const handleFatalError = require("../utils/handleFatalError");
 const swap = require("./swap");
 
 /**
@@ -40,11 +41,6 @@ const bubbleSort = arr => {
 
   // recursive
   return bubbleSort(arr.slice(0, -1)).concat(arr[arr.length - 1]);
-};
-
-const handleFatalError = function(e) {
-  console.log(`${chalk.red("[fatal error]")}`);
-  console.log(e.message);
 };
 
 try {

@@ -2,6 +2,7 @@
 
 const expect = require("expect");
 const chalk = require("chalk");
+const handleFatalError = require("../utils/handleFatalError");
 const swap = require("./swap");
 
 /**
@@ -33,11 +34,6 @@ const selectionSort = arr => {
   // recursively call the function without the first element (the smallest)
   // and concat at the end that element
   return [arr[0], ...selectionSort(arr.slice(1))];
-};
-
-const handleFatalError = function(e) {
-  console.log(`${chalk.red("[fatal error]")}`);
-  console.log(e.message);
 };
 
 try {
