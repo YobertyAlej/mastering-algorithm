@@ -351,3 +351,13 @@ Understand simple sorting algorithms
   - If it returns a negative number, a should come _before_ b
   - If it returns a positive number, a should come _after_ b
   - If it returns 0, they are the same so they get paired together
+
+#### Bubble Sort Algorithm
+
+A sorting algorithm where the largest value will bubble up to the top!
+
+It's not that efficient, it has a good use case where it excels.
+
+##### Before we sort, we must swap
+
+Many sorting algorithms involve some type of swapping functionality (e.g swapping to numbers to put them in order)
