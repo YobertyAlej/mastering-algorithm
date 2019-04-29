@@ -4,6 +4,7 @@
   "description": "Designed to solve Dynamic Programming problems, excel searching algorithms, sorting algorithms, data structures from scratch, including linked lists, trees, heaps, hash tables, and graphs.",
   "main": "index.js",
   "scripts": {
+    "test": "jest",
     "factorial": "node 3-recursion/factorial.js"
   },
   "keywords": [],
