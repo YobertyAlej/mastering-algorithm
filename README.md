@@ -379,3 +379,14 @@ ES6 Classes
 - The Constructor function is a special function that gets run when the class is instantiated
 - Instance Methods can be added to classes similar to methods in objects
 - Class Methods can be added using the static keyword
+
+### Singly Linked List
+
+- What is a Singly Linked List?
+- Compare and contrast Linked List with Arrays
+- Implement Insertion, Removal, Transversal methods on Singly Linked List
+
+A Data Structure as a collection of nodes, any item is linked to another one by pointers
+in a SINGLE direction
+
+It has a HEAD, a TAIL and a LENGTH
