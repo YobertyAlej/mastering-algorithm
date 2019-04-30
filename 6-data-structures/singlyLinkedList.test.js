@@ -55,4 +55,12 @@ describe("# Singly Linked List", () => {
     expect(singlyLinked.head).toBe(null);
     expect(singlyLinked.tail).toBe(null);
   });
+
+  xit("unshifts an item as the first item", () => {});
+  xit("gets an item in the specified index", () => {});
+  xit("sets an item in the specified index", () => {});
+  xit("inserts an item in the specified index and point the previous next pointer to point him", () => {});
+  xit("inserts an item in the specified index and point the previous next pointer to point him", () => {});
+  xit("removes an item in the specified index", () => {});
+  xit("reverse the entire list pointers", () => {});
 });
