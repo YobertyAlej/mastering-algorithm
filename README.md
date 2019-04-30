@@ -390,3 +390,10 @@ A Data Structure as a collection of nodes, any item is linked to another one by 
 in a SINGLE direction
 
 It has a HEAD, a TAIL and a LENGTH
+
+#### Big0's
+
+- Insert · 0(1)
+- Removal · It depends... O(1) if is the beginning, 0(n) if is the very last item
+- Searching · O(n)
+- Access · O(n)
