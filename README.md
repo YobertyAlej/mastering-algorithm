@@ -391,9 +391,30 @@ in a SINGLE direction
 
 It has a HEAD, a TAIL and a LENGTH
 
-#### Big0's
+#### SLL Performance
 
 - Insert · 0(1)
 - Removal · It depends... O(1) if is the beginning, 0(n) if is the very last item
 - Searching · O(n)
 - Access · O(n)
+
+### Doubly Linked List
+
+Almost identical to Singly Linked List except there is an additional pointer to previous nodes
+Better than SLL for finding nodes and can be done in half the time
+However, they do take more memory considering the extra pointer
+
+#### DLL Performance
+
+- Insert · 0(1)
+- Removal · 0(1)
+- Searching · 0(n)
+- Access 0(n)
+
+### Stacks
+
+- Last In First Out
+- Linked list, push put in the beginning, pop takes away the first element
+- Staks are used to handle function invocations (call stack)
+- Operations like undo redo, and for routing
+- There are not built in data structure in JS, but they are relatively simple to implement
