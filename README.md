@@ -422,3 +422,38 @@ However, they do take more memory considering the extra pointer
 #### Queues
 
 Similar to a stack, but works in First In First On (FIFO)
+
+##### Stacks & Queues Performance
+
+- Insert · 0(1)
+- Removal · 0(1)
+- Searching · 0(n)
+- Access 0(n)
+
+### Trees
+
+If Lists are linear, trees are nonlinear
+
+#### Applications
+
+- HTML DOM
+- Networking
+- Abstract Syntax Tree
+- AI
+- Folders in Operative System
+- Computer File Systems
+
+#### Kinds of Trees
+
+##### Binary Tree
+
+- Can have 1 or 2 nodes at most
+
+##### Binary Search Tree
+
+- Can have 1 or 2 nodes at most
+- Every node at left is less than root
+- Every node at right is greater than root
+
+- Insertion · 0(log n)
+- Searching · 0(log n)
