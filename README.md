@@ -413,8 +413,12 @@ However, they do take more memory considering the extra pointer
 
 ### Stacks
 
-- Last In First Out
+- Last In First Out (LIFO)
 - Linked list, push put in the beginning, pop takes away the first element
 - Staks are used to handle function invocations (call stack)
 - Operations like undo redo, and for routing
 - There are not built in data structure in JS, but they are relatively simple to implement
+
+#### Queues
+
+Similar to a stack, but works in First In First On (FIFO)
