@@ -110,23 +110,22 @@ class BinarySearchTree {
      */
 
     let queue = new Queue();
-    let visited = [];
     let current = null;
 
     queue.enqueue(this.root);
 
     while (queue.size > 0) {
       current = queue.dequeue();
-      visited.push(current.value);
+      closure(current.value);
 
       if (current.left !== null) queue.enqueue(current.left);
       if (current.right !== null) queue.enqueue(current.right);
     }
 
-    return visited;
+    return true;
   }
 
-  DFSPreOrder() {
+  DFSPreOrder(closure) {
     /**
      * Depth Fisrt Search · Pre Order
      *
@@ -139,10 +138,8 @@ class BinarySearchTree {
      *  If the node has a right property, call the helper function with the right property
      */
 
-    let visited = [];
-
     const traverse = root => {
-      visited.push(root.value);
+      closure(root.value);
 
       if (root.left !== null) traverse(root.left);
       if (root.right !== null) traverse(root.right);
@@ -150,10 +147,10 @@ class BinarySearchTree {
 
     traverse(this.root);
 
-    return visited;
+    return true;
   }
 
-  DFSPostOrder() {
+  DFSPostOrder(closure) {
     /**
      * Depth First Search · Post Order
      *
@@ -167,25 +164,23 @@ class BinarySearchTree {
      *  Traverse using the root
      */
 
-    let visited = [];
-
     const traverse = root => {
       if (root.left !== null) traverse(root.left);
       if (root.right !== null) traverse(root.right);
 
-      visited.push(root.value);
+      closure(root.value);
     };
 
     traverse(this.root);
 
-    return visited;
+    return true;
   }
 
-  DFSInOrder() {
+  DFSInOrder(closure) {
     /**
      * Depth First Search · In Order
      *
-     * Traverse the tree vertically storing them from the leafs and returning in order
+     * Traverse the tree vertically operating them from the leafs and visiting the tree in order
      *
      * Create a variable to store the values of the nodes visited
      * Write a helper function to traverse the tree which accepts a node
@@ -195,19 +190,17 @@ class BinarySearchTree {
      *  Traverse using the root
      */
 
-    let visited = [];
-
     const traverse = root => {
       if (root.left !== null) traverse(root.left);
 
-      visited.push(root.value);
+      closure(root.value);
 
       if (root.right !== null) traverse(root.right);
     };
 
     traverse(this.root);
 
-    return visited;
+    return true;
   }
 }
 
@@ -219,4 +212,4 @@ tree.insert(3);
 tree.insert(8);
 tree.insert(20);
 
-console.log(tree.DFSInOrder());
+console.log(tree.BFS(node => console.log(node)));
