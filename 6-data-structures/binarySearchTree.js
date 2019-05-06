@@ -93,7 +93,22 @@ class BinarySearchTree {
     return recursiveCheck(value, this.root);
   }
 
-  bfs() {
+  BFS(closure) {
+    /**
+     * Breadth First Search · BFS
+     *
+     * Traverse the tree horizontally first
+     *
+     * Create a queue, and a variable to store the values of nodes visited
+     * Place the root node in the queue
+     * Loop as long as there is anything in the queue
+     *   Dequee a node from the queue and push the value of the node into the variable visited
+     *   If there is a left property on the node dequeued add it to the queue
+     *   If there is a right property on the node dequeued add it to the queue
+     *
+     * Return the visited nodes
+     */
+
     let queue = new Queue();
     let visited = [];
     let current = null;
@@ -110,6 +125,90 @@ class BinarySearchTree {
 
     return visited;
   }
+
+  DFSPreOrder() {
+    /**
+     * Depth Fisrt Search · Pre Order
+     *
+     * Traverse the tree vertically storing them from the root
+     *
+     * Create a variable to store the values of the nodes visited
+     * Write a helper function to traverse the tree which accepts a node
+     *  Push the value of the node to the variable that stores the values
+     *  If the node has a left property, call the helper function with the left property
+     *  If the node has a right property, call the helper function with the right property
+     */
+
+    let visited = [];
+
+    const traverse = root => {
+      visited.push(root.value);
+
+      if (root.left !== null) traverse(root.left);
+      if (root.right !== null) traverse(root.right);
+    };
+
+    traverse(this.root);
+
+    return visited;
+  }
+
+  DFSPostOrder() {
+    /**
+     * Depth First Search · Post Order
+     *
+     * Traverse the tree vertically storing them from the leafs
+     *
+     * Create a variable to store the values of the nodes visited
+     * Write a helper function to traverse the tree which accepts a node
+     *  If the node has a left property, traverse with the left property
+     *  If the node has a right property, traverse with the right property
+     *  Push the value of the node to the visited list
+     *  Traverse using the root
+     */
+
+    let visited = [];
+
+    const traverse = root => {
+      if (root.left !== null) traverse(root.left);
+      if (root.right !== null) traverse(root.right);
+
+      visited.push(root.value);
+    };
+
+    traverse(this.root);
+
+    return visited;
+  }
+
+  DFSInOrder() {
+    /**
+     * Depth First Search · In Order
+     *
+     * Traverse the tree vertically storing them from the leafs and returning in order
+     *
+     * Create a variable to store the values of the nodes visited
+     * Write a helper function to traverse the tree which accepts a node
+     *  If the node has a left property, traverse with the left property
+     *  Push the value of the node to the visited list
+     *  If the node has a right property, traverse with the right property
+     *  Traverse using the root
+     */
+
+    let visited = [];
+
+    const traverse = root => {
+      if (root.left !== null) traverse(root.left);
+
+      visited.push(root.value);
+
+      if (root.right !== null) traverse(root.right);
+    };
+
+    traverse(this.root);
+
+    return visited;
+  }
 }
 
 let tree = new BinarySearchTree();
@@ -120,4 +219,4 @@ tree.insert(3);
 tree.insert(8);
 tree.insert(20);
 
-console.log(tree.bfs());
+console.log(tree.DFSInOrder());

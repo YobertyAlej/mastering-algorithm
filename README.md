@@ -457,3 +457,49 @@ If Lists are linear, trees are nonlinear
 
 - Insertion · 0(log n)
 - Searching · 0(log n)
+
+#### Tree Traversal
+
+There are two main different ways to traverse a tree, doing it horizontally (BFS) or vertically (DFS)
+
+##### Breadth First Search
+
+It traverse the tree by first visiting every branch of a node and then visiting its childs
+
+##### Depth First Search
+
+It traverse the tree by first visiting every child of a branch node and then going to the parents
+
+There are 3 types of DFS
+
+###### Pre Order
+
+It visit the elements _before_ traverse them, so it starts with the root
+
+###### Post Order
+
+It visit the elements _after_ traverse them, so it starts with the leafs but visits all the branches before visit its parents
+
+###### In Order
+
+It visits the elements _after_ traverse them, and it fallsback to the very first parent before visiting the next child
+
+#### BFS vs DFS (Space Complexity)
+
+The main difference in performance about both ways of traversing a tree, resides in the space complexity. It doesn't matter (or at least not than much) the time complexity of these traverse methods, since we are going to visit every node of the tree once.
+
+On the other hand, depending of the tree, the amount of memory space allocated in a given time could grow to be unnecessarily large.
+
+That's why the answer to the question, what method should i use to traverse _THIS_ tree? It's _depending_ on the characteristics of _THIS_ tree.
+
+Lets say we got a wide tree, a tree that has many nodes in a horizontally way.
+
+If we traverse it using BFS, we will be storing in a queue a very large heap of memory in a variable with no other usage but to keep track. In this scenario, if we use a DFS method we would be using the _call stack_ as our main storage device, in which, if the tree its not that deep it can be less the memory usage in our algorithm.
+
+The answer resides in _which_ tree are we traversing.
+
+Also...
+
+If you use a _DFS In Order_ in combination with a BST, you can get the entire and sorted tree in their underlying order.
+
+If you use a _DFS Pre Order_, we can use the resulted data to "export" a tree strcuture so that it's easily reconstructed or copied.
