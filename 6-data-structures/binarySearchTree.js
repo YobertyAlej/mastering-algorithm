@@ -1,3 +1,5 @@
+const Queue = require("./queue");
+
 class Node {
   constructor(value) {
     this.value = value;
@@ -90,4 +92,32 @@ class BinarySearchTree {
 
     return recursiveCheck(value, this.root);
   }
+
+  bfs() {
+    let queue = new Queue();
+    let visited = [];
+    let current = null;
+
+    queue.enqueue(this.root);
+
+    while (queue.size > 0) {
+      current = queue.dequeue();
+      visited.push(current.value);
+
+      if (current.left !== null) queue.enqueue(current.left);
+      if (current.right !== null) queue.enqueue(current.right);
+    }
+
+    return visited;
+  }
 }
+
+let tree = new BinarySearchTree();
+tree.insert(10);
+tree.insert(6);
+tree.insert(15);
+tree.insert(3);
+tree.insert(8);
+tree.insert(20);
+
+console.log(tree.bfs());

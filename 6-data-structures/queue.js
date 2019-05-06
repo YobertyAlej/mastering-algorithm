@@ -1,5 +1,3 @@
-import { thisTypeAnnotation } from "@babel/types";
-
 class Node {
   constructor(value) {
     this.value = value;
@@ -44,6 +42,8 @@ class Queue {
     }
     this.size--;
 
-    return node;
+    return node.value;
   }
 }
+
+module.exports = Queue;
