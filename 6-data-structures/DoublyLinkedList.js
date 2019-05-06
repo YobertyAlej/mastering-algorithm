@@ -1,5 +1,3 @@
-import { ModuleMap } from "jest-haste-map";
-
 class Node {
   constructor(value) {
     this.value = value;
@@ -9,24 +7,27 @@ class Node {
 }
 
 class DoublyLinkedList {
+  /**
+   * Linked list built uppon nodes with pointers
+   * for their previous and next node
+   */
   constructor() {
     this.head = null;
     this.tail = null;
     this.length = 0;
   }
 
-  push(value) {
-    let node = new Node(value);
-    if (this.head === null) {
+  push(val) {
+    let node = new Node(val);
+    if (this.length === 0) {
       this.head = node;
+      this.tail = node;
     } else {
       this.tail.next = node;
       node.prev = this.tail;
+      this.tail = node;
     }
-
-    this.tail = node;
-    this.length = this.length + 1;
-
+    this.length++;
     return this;
   }
 
@@ -112,12 +113,12 @@ class DoublyLinkedList {
     if (index === 0) return !!this.unshift(val);
     if (index === this.length) return !!this.push(val);
 
-    let newNode = new Node(val);
+    let node = new Node(val);
     let beforeNode = this.get(index - 1);
     let afterNode = beforeNode.next;
 
-    (beforeNode.next = newNode), (newNode.prev = beforeNode);
-    (newNode.next = afterNode), (afterNode.prev = newNode);
+    (beforeNode.next = node), (node.prev = beforeNode);
+    (node.next = afterNode), (afterNode.prev = node);
     this.length++;
     return true;
   }

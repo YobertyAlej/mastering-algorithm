@@ -503,3 +503,38 @@ Also...
 If you use a _DFS In Order_ in combination with a BST, you can get the entire and sorted tree in their underlying order.
 
 If you use a _DFS Pre Order_, we can use the resulted data to "export" a tree strcuture so that it's easily reconstructed or copied.
+
+##### Binary Heaps
+
+Similar to Binary Search Trees but with some special considerations
+
+MaxBinaryHeap, parent nodes are always larger than child nodes
+MinBinaryHeap, parent nodes are always smaller than child nodes
+
+Max Binary Heap
+
+- Each parent has at most two child nodes
+- The value of each parent node is always greater than its child nodes
+- In a max binary heap the parent is greater than the children, but there
+  are no guarantees between sibling nodes
+- A binary heap is as compact as possible. All the children of each node
+  are as full as they can be and left children are filled out first
+
+Min Binary Heap
+
+... It applies the same concepts of a Max Binary Heap with a small tweak,
+the root element starts from the smaller value
+
+Binary Heaps are always used for priority queues and for traversing graphs
+
+###### Representing a Binary Heap
+
+In an array, to find the childs of a node, we use the following mathematical relationship
+
+Where _n_ is the length of the array
+left child = 2n + 1
+right child = 2n + 2
+
+and for the opositive case
+
+left child = Math.floor(n-1 / 2)
