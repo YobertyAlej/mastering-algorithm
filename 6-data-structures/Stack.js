@@ -1,3 +1,5 @@
+"use strict";
+
 class Node {
   constructor(value) {
     this.value = value;
@@ -34,3 +36,5 @@ class Stack {
     return temp.value;
   }
 }
+
+module.exports = Stack;

@@ -1,6 +1,6 @@
 /* eslint-env jest */
 
-const { SinglyLinkedList } = require("./singlyLinkedList");
+const SinglyLinkedList = require("./SinglyLinkedList");
 
 let singlyLinked = null;
 

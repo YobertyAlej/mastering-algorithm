@@ -1,3 +1,5 @@
+import { ModuleMap } from "jest-haste-map";
+
 class Node {
   constructor(value) {
     this.value = value;
@@ -6,7 +8,7 @@ class Node {
   }
 }
 
-class SinglyLinkedList {
+class DoublyLinkedList {
   constructor() {
     this.head = null;
     this.tail = null;
@@ -120,3 +122,5 @@ class SinglyLinkedList {
     return true;
   }
 }
+
+module.exports = DoublyLinkedList;
